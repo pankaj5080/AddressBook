@@ -1,0 +1,79 @@
+﻿<section>
+    <div class="main-content">
+
+        <div class="page-heading">
+            <h3>My Address Book</h3>
+        </div>
+        <div class="wrapper" data-ng-controller="AddressBookController">
+
+            <button class="btn btn-danger" data-ng-hide="showWidget" data-ng-click="showWidget=true">Add New Contact</button>
+
+            <div class="directory-info-row iconic-input right">
+                <i class="fa fa-search"></i>
+                <input class="form-control round-input" type="search" placeholder="Search Contact Here..." data-ng-model="search" />
+            </div>
+
+            <div class="directory-info-row" data-ng-show="showWidget">
+                <div class="col-lg-12">
+                    <div>
+                        <form class="form-horizontal" name="frmPersonDetails" data-ng-submit="addOrUpdateContact()">
+                            <div class="form-group" data-ng-init="">
+                                <label class="col-sm-2 col-sm-2 control-label">*First Name</label>
+                                <div class="col-sm-2">
+                                    <input type="text" class="col-sm-2 form-control" data-ng-model="newFName" required />
+                                </div>
+                                <label class="col-sm-2 col-sm-2 control-label">*Last Name</label>
+                                <div class="col-sm-2">
+                                    <input type="text" class="col-sm-2 form-control" data-ng-model="newLName" required />
+                                </div>
+                                <label class="col-sm-2 col-sm-2 control-label">Designation</label>
+                                <div class="col-sm-2">
+                                    <input type="text" class="col-sm-2 form-control" data-ng-model="newDesignation" />
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-sm-2 col-sm-2 control-label">Oranization</label>
+                                <div class="col-sm-2">
+                                    <input type="text" class="form-control" data-ng-model="newOranization" />
+                                </div>
+                                <label class="col-sm-2 col-sm-2 control-label">*Mobile No</label>
+                                <div class="col-sm-2">
+                                    <input type="text" class="form-control" data-ng-model="newMobileNo" required />
+                                </div>
+                                <label class="col-sm-2 col-sm-2 control-label">*Email ID</label>
+                                <div class="col-sm-2">
+                                    <input type="email" class="form-control" data-ng-model="newEmail" required />
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-sm-2 col-sm-2 control-label">Address</label>
+                                <div class="col-sm-7">
+                                    <input type="text" class="form-control" data-ng-model="newAddress" />
+                                </div>
+                                <div class="col-sm-3 col-lg-push-1">
+                                    <input type="submit" data-ng-hide="edit" class="btn btn-primary" value="Add" />
+                                    <input type="submit" data-ng-show="edit" class="btn btn-primary" value="Update" />
+                                    <button class="btn btn-default" data-ng-click="clearData()">Cancel</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <div class="directory-info-row">
+                <div class="row">
+                    <div class="col-md-3 col-sm-6" data-ng-repeat="person in people | filter:search">
+                        <person-detail person="person" edit="edit" edit-contact="editContact" delete-contact="deleteContact" index="$index"></person-detail>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <footer>
+            Developed by Pankaj Kudale
+        </footer>
+
+    </div>
+</section>

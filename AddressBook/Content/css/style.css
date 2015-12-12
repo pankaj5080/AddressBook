@@ -1,0 +1,191 @@
+@import url('bootstrap.min.css');
+@import url('../fonts/css/font-awesome.min.css');
+@import url('custom-ico-fonts.css');
+
+body {
+    background: #eff0f4;
+    font-family: 'Open Sans', sans-serif;
+    color: #7a7676;
+    line-height: 20px;
+    overflow-x: hidden;
+    font-size: 14px;
+}
+
+input, select, textarea {
+    font-family: 'Open Sans', sans-serif;
+    color: #767676;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.main-content {
+    margin: 5px;
+    background: #eff0f4;
+    min-height: 100%;
+}
+
+.page-heading {
+    padding: 15px;
+    position: relative;
+}
+
+.page-heading h3 {
+    color: #49586e;
+    font-size: 25px;
+    font-weight: normal;
+    margin: 10px 0;
+}
+
+.page-heading .breadcrumb {
+    padding: 0;
+    margin: 0;
+    background: none;
+}
+
+.page-heading .breadcrumb li.active {
+    color: #65CEA7;
+}
+
+.wrapper {
+    padding: 15px;
+}
+
+.wrapper::after {
+    clear: both;
+    display: block;
+    content: '';
+    margin-bottom: 30px;
+}
+
+footer {
+    background: #fff;
+    padding: 15px;
+    color: #7A7676;
+    font-size: 12px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    border-top: 1px solid #eff0f4;
+}
+
+.btn {
+    float: left;
+    margin-right: 5px;
+}
+
+.sm-input {
+    width: 170px !important;
+}
+
+.form-horizontal.adminex-form .form-group {
+    border-bottom: 1px solid #eff2f7;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+}
+
+.form-horizontal.adminex-form .form-group:last-child {
+    border-bottom: none;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+
+.form-horizontal.adminex-form .form-group .help-block {
+    margin-bottom: 0;
+}
+
+.round-input {
+    border-radius: 500px;
+    -webkit-border-radius: 500px;
+}
+
+.m-bot15 {
+    margin-bottom: 15px;
+}
+
+.form-horizontal.adminex-form .checkbox-inline > input {
+    margin-top: 1px;
+    border: none;
+}
+
+.iconic-input {
+    position: relative;
+}
+
+.iconic-input i {
+    color: #CCCCCC;
+    display: block;
+    font-size: 16px;
+    height: 16px;
+    margin: 8px 5px 8px 10px;
+    position: absolute;
+    text-align: center;
+    width: 16px;
+}
+
+.iconic-input input {
+    padding-left: 30px !important;
+}
+
+.iconic-input.right input {
+    padding-left: 10px !important;
+    padding-right: 30px !important;
+}
+
+.iconic-input.right i {
+    float: right;
+    right: 5px;
+}
+
+input.spinner[type="text"], input.spinner[type="password"], input.spinner[type="datetime"], input.spinner[type="datetime-local"], input.spinner[type="date"], input.spinner[type="month"], input.spinner[type="time"], input.spinner[type="week"], input.spinner[type="number"], input.spinner[type="email"], input.spinner[type="url"], input.spinner[type="search"], input.spinner[type="tel"], input.spinner[type="color"] {
+    background: url("../images/input-spinner.gif") right no-repeat !important;
+}
+
+/*--------------------------
+      FORM VALIDATION
+---------------------------*/
+
+.cmxform .form-group label.error {
+    display: inline;
+    margin: 5px 0;
+    color: #FF6C60;
+    font-weight: 400;
+}
+
+input:focus:invalid:focus, textarea:focus:invalid:focus, select:focus:invalid:focus, .cmxform .form-group input.error, .cmxform .form-group textarea.error {
+    border-color: #FF6C60 !important;
+}
+
+#signupForm label.error {
+    display: inline;
+    margin: 5px 0px;
+    width: auto;
+    color: #FF6C60;
+}
+
+.checkbox, .checkbox:hover, .checkbox:focus {
+    border: none;
+}
+
+.directory-list, .directory-info-row {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.directory-list li {
+    border-left: 1px solid #EFF0F4;
+    display: table-cell;
+    width: 1%;
+}
+
+.directory-info-row {
+    display: inline-block;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.directory-info-row h4 {
+    color: #424F63;
+}

@@ -1,0 +1,13 @@
+﻿<div class="panel">
+    <div class="panel-body">
+        <button class="btn-link pull-right" data-ng-hide="edit" data-ng-click="deleteContact()(person)"><i class="fa fa-trash-o"></i></button>
+        <button class="btn-link pull-right" data-ng-click="editContact()(person, index)"><i class="fa fa-pencil"></i></button>
+        <h4><span data-ng-bind-template="{{person.firstName}} {{person.lastName}}"></span></h4>
+        <strong>Designation : </strong><span data-ng-bind="person.designation"></span><br />
+        <strong>Orgnization : </strong><span data-ng-bind="person.orgnization"></span><br />
+        <strong>Mobile No : </strong><span data-ng-bind="person.phoneNumber"></span><br />
+        <strong>Email : </strong><span data-ng-bind="person.emailAddress"></span><br />
+        <strong>Address : </strong><span data-ng-bind="person.address"></span><br />
+
+    </div>
+</div>

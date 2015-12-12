@@ -1,0 +1,5 @@
+C:\Users\Pankaj\documents\visual studio 2012\Projects\AddressBook\AddressBook\bin\AddressBook.dll
+C:\Users\Pankaj\documents\visual studio 2012\Projects\AddressBook\AddressBook\bin\AddressBook.pdb
+C:\Users\Pankaj\documents\visual studio 2012\Projects\AddressBook\AddressBook\obj\Debug\AddressBook.dll
+C:\Users\Pankaj\documents\visual studio 2012\Projects\AddressBook\AddressBook\obj\Debug\AddressBook.pdb
+C:\Users\Pankaj\documents\visual studio 2012\Projects\AddressBook\AddressBook\obj\Debug\AddressBook.csprojResolveAssemblyReference.cache
